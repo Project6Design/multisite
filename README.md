@@ -45,6 +45,8 @@ npm install -g grunt-cli
 npm install
 # Add Drupal as a git submodule. See config.path.drupal_core in config.json for the desired Drupal core directory.
 git submodule add git@github.com:pantheon-systems/drops-7.git drupal_core
+git submodule update --init
+git commit ./drupal_core/ -m "Added Pantheon's drop-7 repo as a submodule."
 ```
 
 ### Available Commands and Examples
